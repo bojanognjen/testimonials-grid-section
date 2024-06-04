@@ -137,6 +137,7 @@
   }
 
   .white-article {
+    background-color: var(--white);
     color: var(--very-dark-grayish-blue);
     box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.15) 0px 30px 60px -30px;
   }
@@ -149,12 +150,15 @@
   }
 
   @media (min-width: 70em) {
-
+    body {
+        min-height: 100vh;
+    }
     .main {
     grid-template-columns: repeat(4, 1fr);
     grid-template-rows: 1fr 1fr;
     max-width: 69.375rem;
     max-height: 37.75rem;
+    margin: auto;
     }
 
     .purple {
