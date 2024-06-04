@@ -150,7 +150,38 @@
     z-index: 0;
   }
 
-  @media (min-width: 70em) {
+  @media (min-width: 53em) {
+    .main {
+      grid-template-columns: repeat(3, 1fr);
+      grid-template-rows: repeat(3, 1fr);
+      grid-template-areas: "a a b"
+                           "c d d"
+                           "e e e";
+    }
+    
+    .purple {
+      grid-area: a;
+    }
+
+    .gray {
+      grid-area: b;
+    }
+
+    .dark {
+      grid-area: d;
+    }
+
+    .whiteLittle {
+      grid-area: c;
+    }
+
+    .whiteBig {
+      grid-area: e;
+    }
+
+  }
+
+  @media (min-width: 87em) {
     body {
         min-height: 100vh;
     }
